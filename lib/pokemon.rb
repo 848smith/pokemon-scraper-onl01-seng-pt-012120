@@ -10,6 +10,7 @@ class Pokemon
   end
   
   def save
-    
+    sql = <<-SQL
+      INSERT INTO 
   end
 end
