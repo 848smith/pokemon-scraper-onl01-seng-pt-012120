@@ -23,6 +23,7 @@ class Pokemon
       SELECT * FROM pokemon WHERE id = ?
       SQL
     pokemon = db.execute(sql, id)
+    id = pokemon[0][0]
     name = pokemon[0][1]
     type = pokemon[0][2]
     new_pokemon = Pokemon.new(name: name, type: type, db: db)
