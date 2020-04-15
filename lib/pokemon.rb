@@ -24,9 +24,8 @@ class Pokemon
       SQL
     binding.pry
     pokemon = db.execute(sql, id)
-    i = pokemon[0]
-    name = pokemon[1]
-    type = pokemon[2]
+    name = pokemon[0][1]
+    type = pokemon[0][2]
     new_pokemon = Pokemon.new(name: name, type: type, db: db, id: i)
   end
 end
