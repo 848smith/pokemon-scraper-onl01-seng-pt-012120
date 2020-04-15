@@ -8,4 +8,8 @@ class Pokemon
     @db = db
     @id = id
   end
+  
+  def save
+    
+  end
 end
