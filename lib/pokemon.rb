@@ -1,3 +1,4 @@
+require 'pry'
 class Pokemon
   attr_accessor :name, :type, :db
   attr_reader :id
@@ -21,6 +22,7 @@ class Pokemon
     sql = <<-SQL
       SELECT * FROM pokemon WHERE id = ?
       SQL
+    binding.pry
     pokemon = db.execute(sql, id)
     i = pokemon[0]
     name = pokemon[1]
