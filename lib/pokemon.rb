@@ -22,7 +22,6 @@ class Pokemon
     sql = <<-SQL
       SELECT * FROM pokemon WHERE id = ?
       SQL
-    binding.pry
     pokemon = db.execute(sql, id)
     name = pokemon[0][1]
     type = pokemon[0][2]
