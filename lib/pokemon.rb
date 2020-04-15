@@ -22,6 +22,6 @@ class Pokemon
       SELECT * FROM pokemon WHERE id = ?
       SQL
     pokemon = db.execute(sql, id)
-    
+    name = pokemon[1]
   end
 end
