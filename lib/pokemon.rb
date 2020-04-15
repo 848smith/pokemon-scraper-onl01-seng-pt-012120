@@ -13,6 +13,6 @@ class Pokemon
     sql = <<-SQL
       INSERT INTO pokemon (name, type, db) VALUES (?, ?, ?)
       SQL
-    @db
+    @db.execute(sql, self.name, self.type, self.db)
   end
 end
