@@ -24,5 +24,6 @@ class Pokemon
     pokemon = db.execute(sql, id)
     name = pokemon[1]
     type = pokemon[2]
+    new_pokemon = Pokemon.new(name: name, type: type)
   end
 end
