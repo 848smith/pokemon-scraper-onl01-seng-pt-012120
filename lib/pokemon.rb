@@ -3,6 +3,9 @@ class Pokemon
   attr_reader :id
   
   def initialize(name, type, db, id=nil)
-    
+    @name = name
+    @type = type
+    @db = db
+    @id = id
   end
 end
