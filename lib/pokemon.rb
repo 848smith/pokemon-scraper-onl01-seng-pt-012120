@@ -23,5 +23,6 @@ class Pokemon
       SQL
     pokemon = db.execute(sql, id)
     name = pokemon[1]
+    type = pokemon[2]
   end
 end
